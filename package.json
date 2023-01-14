@@ -1,0 +1,37 @@
+{
+  "name": "real-time-chat-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "16.17.0"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "nodemon": "^2.0.20",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^6.6.2",
+    "react-scripts": "^5.0.1",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jacksonwolfd20/Real-Time-Chat-App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jacksonwolfd20/Real-Time-Chat-App/issues"
+  },
+  "homepage": "https://github.com/Jacksonwolfd20/Real-Time-Chat-App#readme"
+}

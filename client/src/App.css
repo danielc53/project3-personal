@@ -1,0 +1,67 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  background: rgb(2,0,36);
+  background: radial-gradient(circle, rgba(2,0,36,1) 9%, rgba(63,62,107,1) 35%, rgba(139,215,214,1) 97%);
+  background-position: center;
+  background-size: cover;
+}
+
+:root {
+  --dark: #595959;
+  --light: #afbfc4;
+}
+/*Login/sign up page*/
+
+.loginsignuppage {
+  background-color: var(--dark);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginsignup {
+  text-align: center;
+}
+
+.login {
+  padding: 25px;
+  border-radius: 5px;
+  border-color: black;
+  border-style: solid;
+  display: inline-block;
+  min-width: 45vh;
+  display: inline-block;
+  background-color: var(--light);
+}
+
+.signup {
+  padding: 25px;
+  border-radius: 5px;
+  border-color: black;
+  border-style: solid;
+  display: inline-block;
+  min-width: 45vh;
+  display: inline-block;
+  background-color: var(--light);
+}
+
+/*Account settings page*/
+.settingspage {
+}
+
+.settingsbox {
+  padding: 25px;
+  border-radius: 5px;
+  border-color: black;
+  border-style: solid;
+  display: inline-block;
+  min-width: 45vh;
+}
+
+.submitbuttons {
+  margin-top: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}

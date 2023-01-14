@@ -1,0 +1,10 @@
+[
+    {
+      "chatName": "chatName1",
+      "isGroupChat": false,
+      "users": [
+        "63bb00e1c26baa6f6000cdf6"
+      ],
+      "groupAdmin": "63bb00e1c26baa6f6000cdf6"
+    }   
+]

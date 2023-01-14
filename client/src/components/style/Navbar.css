@@ -1,0 +1,60 @@
+.masterNav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    align-items: center;
+    justify-content: center;
+   
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 40px;
+    }
+
+    #hamburger {
+        display: none;
+    }
+}
+
+
+.noStyle {
+    list-style: none;
+
+}
+
+.navItem {
+    padding: 10px;
+    margin-left: 2px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+div ul li a {
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .noStyle {
+        display: none;
+    }
+
+    .hamburger {
+        display: inline;
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
+
+div ul button {
+    background-color: none;
+    padding-top: 4px;
+}
+
+.showcaseLeft {
+    padding-left: 25px;
+}
