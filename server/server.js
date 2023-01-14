@@ -22,20 +22,21 @@ const server = new ApolloServer({
     context: authMiddleware,
 });
 
+app.use(
+    'graphql',
+    graphqlHTTP({
+        schema,
+        graphql: true
+    })
+);
 
-app.use(express.static(public));
+app.use(express.static('public'));
 
-if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.join(__dirname, '../client/src')));
-}
-  
-/*
-//serve homepage
-app.get('/', (req, res) => {
-     res.sendFile(path.join(__dirname, '../client/src/index.html'));
+app.get('*', (req,res) => {
+    res.sendFile(path.resolve(__dirname, 'public', 'index.html'))
 })
-*/
-//function to start server
+
+
 const startApolloServer = async (typeDefs, resolvers) => {
 
     await server.start();
